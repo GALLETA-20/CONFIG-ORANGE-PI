@@ -124,8 +124,6 @@ El archivo `rc.local` sirve para ejecutar scripts o comando después de cargar t
         
 2. Permisos de ejecución.
      El archivo `rc.local` necesita permisos de ejecución:
-       `# sudo chmod -v +x /etc/rc.local`  
-       Salida:
        ```
         root @ orangepizero2w: ~ # sudo chmod -v +x /etc/rc.local 
         el modo de '/etc/rc.local' permanece como 0775 (rwxrwxr-x)
