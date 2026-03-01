@@ -96,3 +96,18 @@ Ciudad_Juarez   Halifax        Miquelon       Rosario
  Advertencia!: No apagar la Orange Pi ni interrumpir el proceso de actualización.
  Si se interrumpe, pueden corromperse los archivos y el sistema queda inutilizable.
  ```
+
+## Configuración de fecha y hora
+La Orange Pi no tiene un dispositivo RTC(Real-Time Clock) integrado que mantenga la fecha y hora actualizada cuando la placa se apaga. Por este motivo, cada vez que la Orange Pi se apague o reinicie:  
+  - Se pierde la fecha y hora del sistema.  
+  - Repositorios quedan desincronizados.  
+  - No permite las descargar de aplicaciones ni actualizaciones mediante apt.
+
+Esto se soluciona ingresando el comando `# sudo date -s "$(TZ='America/Lima' date +%Y-%m-%d %H:%M%S)"` cada vez que se inicia el sistema.  
+Sin embargo, es molesto estar ingresando el comando cada vez que se inicia el sistema, y esto se soluciona editando el archivo `rc.local`.
+
+## Condiguración rc.local
+El archivo `rc.local` sirve para ejecutar scripts o comando después de cargar todos los servicios del sistema linux.
+
+ > Vea el archivo rc.local.
+
