@@ -111,21 +111,23 @@ El archivo `rc.local` sirve para ejecutar scripts o comando después de cargar t
 
  > Vea el archivo rc.local.
 
-El archivo rc.local se encuentra en la carpeta `etc`.  
-Para modificar el archivo ejcuta el comando `sudo nano /etc/rc.local`:  
-Agrega el comando `sudo date -s "$(TZ='America/Lima' date +%Y-%m-%d %H:%M%S)` antes de la linea que contiene `exit 0`.
-
-  - Guarda con:
-    `ctrl + o` y luego presiona enter.  
-
-  - Salir del archivo con:  
-    `ctrl + x`
-
- El archivo `rc.local` necesita permisos de ejecución:
-   `# sudo chmod -v +x /etc/rc.local`
-   Salida:
-   ```
-    root @ orangepizero2w: ~ # sudo chmod -v +x /etc/rc.local 
-    el modo de '/etc/rc.local' permanece como 0775 (rwxrwxr-x)
-   ```
- 
+1. Editar el archivo `rc.local`.
+    El archivo rc.local se encuentra en la carpeta `etc`.  
+    Para modificar el archivo ejcuta el comando `sudo nano /etc/rc.local`:  
+    Agrega el comando `sudo date -s "$(TZ='America/Lima' date +%Y-%m-%d %H:%M%S)` antes de la linea que contiene `exit 0`.
+    
+      - Guarda con:
+        `ctrl + o` y luego presiona enter.  
+    
+      - Salir del archivo con:  
+        `ctrl + x`
+        
+2. Permisos de ejecución.
+     El archivo `rc.local` necesita permisos de ejecución:
+       `# sudo chmod -v +x /etc/rc.local`  
+       Salida:
+       ```
+        root @ orangepizero2w: ~ # sudo chmod -v +x /etc/rc.local 
+        el modo de '/etc/rc.local' permanece como 0775 (rwxrwxr-x)
+       ```
+     
