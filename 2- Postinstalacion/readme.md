@@ -111,3 +111,12 @@ El archivo `rc.local` sirve para ejecutar scripts o comando después de cargar t
 
  > Vea el archivo rc.local.
 
+El archivo rc.local se encuentra en la carpeta `etc`.
+Para modificar el archivo ejcuta el comando `sudo nano /etc/rc.local`:  
+Agrega el comando `sudo date -s "$(TZ='America/Lima' date +%Y-%m-%d %H:%M%S)` antes de la linea que contiene `exit 0`.
+
+Guarda con:
+`ctrl + o` y luego presiona enter.  
+
+Salir del archivo con:  
+`ctrl + x` 
