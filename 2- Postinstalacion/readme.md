@@ -128,4 +128,13 @@ El archivo `rc.local` sirve para ejecutar scripts o comando después de cargar t
         root @ orangepizero2w: ~ # sudo chmod -v +x /etc/rc.local 
         el modo de '/etc/rc.local' permanece como 0775 (rwxrwxr-x)
        ```
-     
+   
+3. Confirmación  
+     Se debe confirmar que el servicio esté activo.
+     Ejecuta el comando `systemctl is-enabled rc-local.service`.
+
+     La salida esperada es:
+     ```
+     root @ orangepizero2w: ~ # systemctl is-enabled rc-local.service
+     enabled-runtime
+     ```
