@@ -12,5 +12,5 @@ En este repositorio se documentan algunos servicios específicos. El sistema ope
 ## Índice:
 1. Instalación del Sistema Operativo.
 2. Postinstalación del sistema.
-4. Configuración de red adicional.
+4. Configuración de adicional de red.
 
