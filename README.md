@@ -5,8 +5,7 @@ Este repositorio describe la instalación y configuración necesaria del Sistema
 
 El repositorio está organizado en carpetas con los nombres de los servicios o programas. Cada una de ellas contiene la documentación técnica y scripts necesarios para el correcto funcionamiento del programa o servicio correspondiente. Algunos pasos se pueden omitir siempre y cuando no formen parte de los requisitos previos de un servicio que se desee implementar.
 
-Tener en cuenta que gran parte de la configuracion y pasos de instalación son casi identicos 
-
+Tener en cuenta que gran parte de la configuracion y pasos de instalación son altamente compatibles con otras placas de la familia de ORANGE PI. Sin embargo configuraciones específicas de hardware (como asignación de GPIOS, módulos de Kernel) pueden variar según el modelo de SoC utilizado. Pero ese tipo de configuración no se ve en este repositorio
 
 En este repositorio se documentan algunos servicios específicos. El sistema operativo queda preparado para incorporar otros servicios.
 
